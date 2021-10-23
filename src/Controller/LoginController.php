@@ -1,23 +1,19 @@
 <?php
 
-
-namespace App\Login;
+namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * Class LoginService
- * @package App\Login
- */
-class LoginService extends AbstractController
+class LoginController extends AbstractController
 {
     /**
      * @Route("/auth/login", name="login")
      */
     public function index(): JsonResponse
     {
-        return new JsonResponse('you called me !');
+        return new JsonResponse('you called me');
     }
 }
